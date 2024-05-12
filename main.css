@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background: #202020;
+}
+
+header {
+  /* background: #FBD1A2; */
+  padding: 1em 0;
+  color: #C08497;
+  display: flex;
+  /* border-bottom: 1px solid #023b1f; */
+  justify-content: center;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+header button {
+  margin-left: 1em;
+}
+
+form {
+  padding: 0.5em 0 2em 0;
+  text-align: center;
+  display: none;
+}
+
+form h2 {
+  margin-bottom: 1em;
+  color: #F7AF9D;
+  font-weight: 400;
+}
+
+input {
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+input,
+button {
+  padding: 0.5em;
+}
+
+button {
+  background: #B0D0D3;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #202020;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #708688;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#botao-cancelar {
+  background: #ca9ec3;
+  color: #202020;
+}
+
+#botao-cancelar:hover {
+    background: #7c6278;
+    color: #fff;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul li {
+  max-width: 25%;
+  list-style: none;
+  position: relative;
+  max-height: 280px;
+  overflow-y: hidden;
+}
+
+ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-img-link {
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+
+.overlay-img-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li:hover .overlay-img-link.overlay-img-link {
+  opacity: 1;
+}
